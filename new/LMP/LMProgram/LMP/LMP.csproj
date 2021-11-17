@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4CEEEF2F-2E68-464B-BDF0-6F5DA6E377D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LMP</RootNamespace>
+    <AssemblyName>LMP</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomerEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerEditForm.Designer.cs">
+      <DependentUpon>CustomerEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSuggestionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerSuggestionForm.Designer.cs">
+      <DependentUpon>CustomerSuggestionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerWriteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerWriteForm.Designer.cs">
+      <DependentUpon>CustomerWriteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonCustomerMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NonCustomerMainForm.Designer.cs">
+      <DependentUpon>NonCustomerMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminBookInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminBookInfoForm.Designer.cs">
+      <DependentUpon>AdminBookInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerMainForm.Designer.cs">
+      <DependentUpon>CustomerMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCustomerMgrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminCustomerMgrForm.Designer.cs">
+      <DependentUpon>AdminCustomerMgrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCustomerEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminCustomerEditForm.Designer.cs">
+      <DependentUpon>AdminCustomerEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMainForm.Designer.cs">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminInputOutputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminInputOutputForm.Designer.cs">
+      <DependentUpon>AdminInputOutputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminNoticeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminNoticeForm.Designer.cs">
+      <DependentUpon>AdminNoticeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FontChangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FontChangeForm.Designer.cs">
+      <DependentUpon>FontChangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDPWSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IDPWSearchForm.Designer.cs">
+      <DependentUpon>IDPWSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonCustomerWriteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NonCustomerWriteForm.Designer.cs">
+      <DependentUpon>NonCustomerWriteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AdminSuggestionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSuggestionForm.Designer.cs">
+      <DependentUpon>AdminSuggestionForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminCustomerEditForm.resx">
+      <DependentUpon>AdminCustomerEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminCustomerMgrForm.resx">
+      <DependentUpon>AdminCustomerMgrForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMainForm.resx">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminNoticeForm.resx">
+      <DependentUpon>AdminNoticeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerEditForm.resx">
+      <DependentUpon>CustomerEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerMainForm.resx">
+      <DependentUpon>CustomerMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerSuggestionForm.resx">
+      <DependentUpon>CustomerSuggestionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerWriteForm.resx">
+      <DependentUpon>CustomerWriteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NonCustomerMainForm.resx">
+      <DependentUpon>NonCustomerMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NonCustomerWriteForm.resx">
+      <DependentUpon>NonCustomerWriteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="AdminSuggestionForm.resx">
+      <DependentUpon>AdminSuggestionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ResourcesNo2\Customer\man %281%29.jpg" />
+    <Content Include="ResourcesNo2\Customer\man %281%29.png" />
+    <Content Include="ResourcesNo2\Customer\man.png" />
+    <Content Include="ResourcesNo2\Customer\manman %281%29.png" />
+    <Content Include="ResourcesNo2\Customer\premium-icon-educational-book-3139349.png" />
+    <Content Include="ResourcesNo2\Customer\small2.png" />
+    <Content Include="ResourcesNo2\Information\관리자.png" />
+    <Content Include="ResourcesNo2\Information\비회원.png" />
+    <Content Include="ResourcesNo2\Information\회원.png" />
+    <Content Include="ResourcesNo2\Operation\ddoing1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
